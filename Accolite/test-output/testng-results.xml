@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="4" passed="3" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[test is passed without any failure]]>
+    </line>
+    <line>
+      <![CDATA[Element is present]]>
+    </line>
+    <line>
+      <![CDATA[test is passed without any failure]]>
+    </line>
+    <line>
+      <![CDATA[Element is present]]>
+    </line>
+    <line>
+      <![CDATA[test is passed without any failure]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2022-02-03T14:33:37 IST" name="Default suite" finished-at="2022-02-03T14:34:31 IST" duration-ms="54073">
+    <groups>
+    </groups>
+    <test started-at="2022-02-03T14:33:37 IST" name="Default test" finished-at="2022-02-03T14:34:31 IST" duration-ms="54073">
+      <class name="PaymentAutomationTest.myAccountLoginTest">
+        <test-method signature="LoginTest()[pri:1, instance:PaymentAutomationTest.myAccountLoginTest@f736069]" started-at="2022-02-03T14:33:37 IST" name="LoginTest" finished-at="2022-02-03T14:34:01 IST" duration-ms="24505" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:PaymentAutomationTest.myAccountLoginTest@f736069]" started-at="2022-02-03T14:34:01 IST" name="postCondition" finished-at="2022-02-03T14:34:01 IST" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LoginTest status=SUCCESS method=myAccountLoginTest.LoginTest()[pri:1, instance:PaymentAutomationTest.myAccountLoginTest@f736069] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[test is passed without any failure]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method signature="AddItem()[pri:2, instance:PaymentAutomationTest.myAccountLoginTest@f736069]" started-at="2022-02-03T14:34:01 IST" name="AddItem" finished-at="2022-02-03T14:34:21 IST" duration-ms="19560" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Element is present]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AddItem -->
+        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:PaymentAutomationTest.myAccountLoginTest@f736069]" started-at="2022-02-03T14:34:21 IST" name="postCondition" finished-at="2022-02-03T14:34:21 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AddItem status=SUCCESS method=myAccountLoginTest.AddItem()[pri:2, instance:PaymentAutomationTest.myAccountLoginTest@f736069] output=Element is present]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[test is passed without any failure]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method signature="verifyCheckoutAndUpiPayment()[pri:3, instance:PaymentAutomationTest.myAccountLoginTest@f736069]" started-at="2022-02-03T14:34:21 IST" name="verifyCheckoutAndUpiPayment" finished-at="2022-02-03T14:34:31 IST" duration-ms="9942" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Element is present]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyCheckoutAndUpiPayment -->
+        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:PaymentAutomationTest.myAccountLoginTest@f736069]" started-at="2022-02-03T14:34:31 IST" name="postCondition" finished-at="2022-02-03T14:34:31 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCheckoutAndUpiPayment status=SUCCESS method=myAccountLoginTest.verifyCheckoutAndUpiPayment()[pri:3, instance:PaymentAutomationTest.myAccountLoginTest@f736069] output=Element is present]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[test is passed without any failure]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- PaymentAutomationTest.myAccountLoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
