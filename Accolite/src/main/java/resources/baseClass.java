@@ -18,6 +18,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class baseClass {
 
+	//change the path of property file and driver executables before execution for each method.
 	public WebDriver driver;
 
 	public WebDriver initializeBrowser() throws IOException
@@ -25,12 +26,16 @@ public class baseClass {
 
 
 	Properties prop=new Properties();
-	FileInputStream fis=new FileInputStream("D:\\project\\Accolite\\src\\main\\java\\resources\\GlobalVariables.properties");
+	
+	//change path
+	
+	FileInputStream fis=new FileInputStream("C:\\Users\\Tanya\\git\\AccoliteAssignment\\Accolite\\src\\main\\java\\resources\\GlobalVariables.properties");
 	prop.load(fis);
 	String browserName=prop.getProperty("browser");
 	if(browserName.equals("Chrome"))
 	{
 	System.out.println("Executing test in chrome browser");
+	//change path
 	System.setProperty("webdriver.chrome.driver", "D:\\project\\Accolite\\drivers\\chromedriver.exe");
 	driver=new ChromeDriver();
 
@@ -48,6 +53,7 @@ public class baseClass {
 	driver=new FirefoxDriver();
 	}
 	driver.manage().window().maximize();
+	driver.manage().deleteAllCookies();
 
 	return driver;
 	}
@@ -58,7 +64,8 @@ public class baseClass {
 	public String getURL() throws IOException {
 	// TODO Auto-generated method stub
 	Properties prop= new Properties();
-	FileInputStream fis =new FileInputStream("D:\\project\\Accolite\\src\\main\\java\\resources\\GlobalVariables.properties");
+	//change path
+	FileInputStream fis =new FileInputStream("C:\\Users\\Tanya\\git\\AccoliteAssignment\\Accolite\\src\\main\\java\\resources\\GlobalVariables.properties");
 	prop.load(fis);
 	String url=prop.getProperty("url");
 	driver.get(url);
@@ -71,7 +78,8 @@ public class baseClass {
 	public String validUsername() throws IOException
 	{
 	Properties prop= new Properties();
-	FileInputStream fis =new FileInputStream("D:\\project\\Accolite\\src\\main\\java\\resources\\GlobalVariables.properties");
+	//change path
+	FileInputStream fis =new FileInputStream("C:\\Users\\Tanya\\git\\AccoliteAssignment\\Accolite\\src\\main\\java\\resources\\GlobalVariables.properties");
 	prop.load(fis);
 	String validUsername=prop.getProperty("username");
 	return validUsername;
@@ -80,7 +88,8 @@ public class baseClass {
 	public String validPassword() throws IOException
 	{
 	Properties prop= new Properties();
-	FileInputStream fis =new FileInputStream("D:\\project\\Accolite\\src\\main\\java\\resources\\GlobalVariables.properties");
+	//change path
+	FileInputStream fis =new FileInputStream("C:\\Users\\Tanya\\git\\AccoliteAssignment\\Accolite\\src\\main\\java\\resources\\GlobalVariables.properties");
 	prop.load(fis);
 	String validpassword=prop.getProperty("password");
 	return validpassword;
@@ -89,7 +98,8 @@ public class baseClass {
 	public String validUpiName() throws IOException
 	{
 	Properties prop= new Properties();
-	FileInputStream fis =new FileInputStream("D:\\project\\Accolite\\src\\main\\java\\resources\\GlobalVariables.properties");
+	//change path
+	FileInputStream fis =new FileInputStream("C:\\Users\\Tanya\\git\\AccoliteAssignment\\Accolite\\src\\main\\java\\resources\\GlobalVariables.properties");
 	prop.load(fis);
 	String validUpiName=prop.getProperty("upiname");
 	return validUpiName;
